@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,48 +10,37 @@
 <body>
 
     <header>
-        <h1>My Personal Website</h1>
-        <p>Welcome! Get to know me ✨</p>
+        <h1>My Website</h1>
+        <p>Welcome! Get to know me!</p>
     </header>
 
     <div class="container">
 
         <section class="card">
             <img src="https://via.placeholder.com/150" class="profile">
-            <h2>Your Name</h2>
+            <h2>Aron Jay Cagadas</h2>
             <p>A student who enjoys learning and exploring new things.</p>
 
-            <button onclick="changeText()">Say Hi 👋</button>
+            <button onclick="changeText()">Say Hi!</button>
             <p id="greet"></p>
         </section>
 
         <section class="card">
             <h2>My Hobbies</h2>
-
-            <div class="dropdown">
-                <button class="dropbtn">🎮 Gaming</button>
-                <div class="dropdown-content">
-                    <p>Mobile Legends (MLBB)</p>
-                    <p>Roblox</p>
-                    <p>Call of Duty Mobile (CODM)</p>
+            <div class="hobbies">
+                <div class="hobby">
+                    <img src="https://via.placeholder.com/100">
+                    <p>Gaming</p>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <button class="dropbtn">🎵 Music</button>
-                <div class="dropdown-content">
-                    <p>Gabriela - KATSEYE</p>
-                    <p>Ride - SoMo</p>
-                    <p>Glimpse of Us - Joji</p>
+                <div class="hobby">
+                    <img src="https://via.placeholder.com/100">
+                    <p>Music</p>
                 </div>
-            </div>
 
-            <div class="dropdown">
-                <button class="dropbtn">🏀 Sports</button>
-                <div class="dropdown-content">
-                    <p>Basketball</p>
-                    <p>Baseball</p>
-                    <p>Badminton</p>
+                <div class="hobby">
+                    <img src="https://via.placeholder.com/100">
+                    <p>Sports</p>
                 </div>
             </div>
         </section>
@@ -64,18 +52,15 @@
 
     </div>
 
-
     <footer>
         <p>© 2026 My Website</p>
     </footer>
 
-
     <script>
         function changeText() {
-            document.getElementById("greet").innerHTML = "Nice to meet you! 😊";
+            document.getElementById("demo").innerHTML = "Nice to meet you! 😊";
         }
     </script>
 
 </body>
-
 </html>
