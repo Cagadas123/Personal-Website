@@ -3,64 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
-    <link rel="stylesheet" href="intervention.css">
+    <title>My Unique Personal Website</title>
+    <link rel="stylesheet" href="intervention1.css">
 </head>
 
 <body>
 
+<!-- SIDEBAR -->
+<nav class="sidebar">
+    <h2>My Profile</h2>
+    <a href="#about">About</a>
+    <a href="#life">Daily Life</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#goals">Goals</a>
+</nav>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
     <header>
-        <h1>My Website</h1>
-        <p>Welcome! Get to know me!</p>
+        <h1>Hello, I'm Aron Jay Cagadas</h1>
+        <p>A student exploring life, technology, and creativity</p>
     </header>
 
-    <div class="container">
+    <!-- ABOUT -->
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <img src="https://via.placeholder.com/200">
+        <p>I am a student who is passionate about improving myself and learning new skills. Every day, I challenge myself to grow both academically and personally.</p>
 
-        <section class="card">
-            <img src="images/ron.jfif" class="profile">
-            <h2>Aron Jay Cagadas</h2>
-            <p>A student who enjoys learning and exploring new things.</p>
+        <p>I enjoy exploring technology, especially creating websites. It allows me to express creativity while also developing technical skills that are useful in the future.</p>
 
-            <button onclick="changeText()">Say Hi!</button>
-            <p id="greet"></p>
-        </section>
+        <p>I believe that consistency and effort are the keys to success. Even small progress each day can lead to big achievements over time.</p>
+    </section>
 
-        <section class="card">
-            <h2>My Hobbies</h2>
-            <div class="hobbies">
-                <div class="hobby">
-                    <img src="images/mlbb.jpg">
-                    <p>Gaming</p>
-                </div>
+    <!-- DAILY LIFE -->
+    <section id="life" class="card">
+        <h2>My Daily Life</h2>
+        <p>My day usually starts with preparing for school and organizing tasks. I attend classes, complete activities, and make sure I stay productive throughout the day.</p>
 
-                <div class="hobby">
-                    <img src="images/gabriela.jfif">
-                    <p>Music</p>
-                </div>
+        <p>After school, I take time to relax by playing games, listening to music, or browsing online. These activities help me recharge and stay balanced.</p>
 
-                <div class="hobby">
-                    <img src="images/basketball.jpg">
-                    <p>Sports</p>
-                </div>
+        <p>I also try to manage my time wisely to balance responsibilities and enjoyment.</p>
+    </section>
+
+    <!-- HOBBIES -->
+    <section id="hobbies" class="card">
+        <h2>My Hobbies</h2>
+
+        <div class="grid">
+            <div onclick="showHobby('Games')">
+                <img src="https://via.placeholder.com/100">
+                🎮 Gaming
+                <p>MLBB, Roblox, CODM</p>
             </div>
-        </section>
 
-        <section class="card">
-            <h2>Contact</h2>
-            <p>Email: aronjaycagadas88@gmail.com</p>
-        </section>
+            <div onclick="showHobby('Music')">
+                <img src="https://via.placeholder.com/100">
+                🎵 Music
+                <p>Gabriela, Ride, Glimpse of Us</p>
+            </div>
 
-    </div>
+            <div onclick="showHobby('Sports')">
+                <img src="https://via.placeholder.com/100">
+                🏀 Sports
+                <p>Basketball, Baseball, Badminton</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- GOALS -->
+    <section id="goals" class="card">
+        <h2>My Goals</h2>
+        <p>My main goal is to finish my studies and build a successful career in the future. I want to continuously improve my knowledge and skills.</p>
+
+        <p>I also want to become financially stable and support my family. This motivates me to work harder every day.</p>
+
+        <p>In the future, I hope to inspire others through my journey and achievements.</p>
+    </section>
 
     <footer>
-        <p>© 2026 My Website</p>
+        <p>© 2026 | Created by [Your Name]</p>
     </footer>
 
-    <script>
-        function changeText() {
-            document.getElementById("greet").innerHTML = "Nice to meet you! 😊";
-        }
-    </script>
+</div>
+
+<script>
+function showHobby(hobby) {
+    alert("This is my favorite " + hobby + "!");
+}
+</script>
 
 </body>
 </html>
